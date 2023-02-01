@@ -14,7 +14,7 @@ $lesNationalites=$req->fetchAll();
         
         </div>
 
-        <table class="table table-striped">
+        <table class="table table-hover table-striped">
         <thead>
             <tr class="d-flex">
             <th scope="col" class="col-md-2">Numéro</th>
