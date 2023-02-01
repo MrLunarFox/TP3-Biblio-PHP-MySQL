@@ -8,6 +8,7 @@
     <meta name="generator" content="Hugo 0.101.0">
     <title>Jumbotron Template · Bootstrap v4.6</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/jumbotron/">
 
     
