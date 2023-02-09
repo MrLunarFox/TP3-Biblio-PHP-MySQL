@@ -52,7 +52,7 @@
   <body>
     
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Ma Bibliothèque</a>
+  <a class="navbar-brand" href="index.php">Ma Bibliothèque</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -62,24 +62,23 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des genres</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Liste des genres</a>
+          <a class="dropdown-item" href="#">Ajouter un genre</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des auteurs</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Liste des auteurs</a>
+          <a class="dropdown-item" href="#">Ajouter un auteur</a>
+          <a class="dropdown-item" href="#">Rechercher un auteur</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des nationalités</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="listeNationalites.php">Liste des nationalités</a>
-          <a class="dropdown-item" href="#">Ajouter une nationalité</a>
+          <a class="dropdown-item" href="formAjoutNationalite.php">Ajouter une nationalité</a>
         </div>
       </li>
     </ul>
