@@ -1,10 +1,23 @@
 <?php include "header.php";
 include "connexionpdo.php";
+$action=$_GET['action'];
+$num=$_POST['num'];
 $libelle=$_POST['libelle'];
 
-$req=$monPdo->prepare("insert into nationalite(libelle) values(:libelle)");
-$req->bindParam(':libelle', $libelle);
+if($action == "Modifier")
+{
+    $req=$monPdo->prepare("update nationalite set libelle = :libelle where num = :num");
+    $req->bindParam(':num', $num);
+    $req->bindParam(':libelle', $libelle);
+}
+else
+{
+    $req=$monPdo->prepare("insert into nationalite(libelle) values(:libelle)");
+    $req->bindParam(':libelle', $libelle);
+}
 $nb=$req->execute();
+
+$message= $action == "Modifier" ? "modifiée" : "ajoutée" ;
 
 echo '<div class="container mt-5">';
 
@@ -15,13 +28,13 @@ echo '<div class="row">
 if($nb == 1)
 {
     echo ' <div class="alert alert-success" role="alert">
-    La nationalité a bien été ajoutée
+    La nationalité a bien été '.$message.'
     </div> ';
 }
 else
 {
     echo ' <div class="alert alert-danger" role="alert">
-    La nationalité n\'a pas été ajoutée !
+    La nationalité n\'a pas été '.$message.' !
     </div> ';
 }
 ?>
